@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+    padding: 15px;
+    border: 2px solid red;
+}
+
+/* Outlines for desiginng and visualizing */
+
+.sidebar div{
+    padding: 15px;
+    border: 2px solid blue;
+}
+
+.sidebar div *{
+    border: 1px dotted black;
+}
+
+.header div{
+    padding: 15px;
+    border: 2px solid green;
+}
+
+.header div *{
+    border: 1px dotted black;
+}
+
+.main div{
+    padding: 15px;
+    border: 2px solid gold;
+}
+
+.main div *, .main h1{
+    border: 1px dotted black;
+}
+
+/*****************************************/
