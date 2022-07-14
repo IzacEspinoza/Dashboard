@@ -3,11 +3,6 @@
   margin: 0;
 }
 
-.container{
-    padding: 15px;
-    border: 2px solid red;
-}
-
 /* Outlines for desiginng and visualizing */
 
 .sidebar div{
@@ -38,3 +33,49 @@
 }
 
 /*****************************************/
+
+/*Container style *************************/
+.container{
+    padding: 5px;
+    border: 2px solid red;
+    background-color: #cbd5e1;
+
+    display: grid;
+    grid-template: auto auto / 20% 80%;
+}
+/******************************************/
+
+/* Side bar styling*************/
+.sidebar{
+    color: white;
+    background-color: #0284c7;
+
+    grid-column: 1;
+    grid-row: 1 / 4;
+}
+
+.logo{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu li{
+    display: flex;
+}
+
+.options ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.options li{
+    display: flex;
+    
+}
+
+/***************************************/
