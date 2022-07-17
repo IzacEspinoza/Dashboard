@@ -86,7 +86,8 @@
     display: grid;
     grid-template: 100px 100px / 50% 50%;
 
-    height: 100%;
+    height: auto;
+    padding: 5px;
     /* height: 20%; */
 
     background-color: #f0f9ff;
@@ -96,6 +97,7 @@
 .header > div{
     /* background-color: red; */
     height: 40%;
+    padding: 5px;
 }
 
 .search,
@@ -172,13 +174,25 @@
 
 /* Main content styling *****************/
 .main{
-    padding: 10px;
+    padding: 5px;
     display: grid;
     grid-template: auto / 70% 30%;
 }
 
+.projects-grid h1{
+    width: 120px;
+    height: 50px;
+}
+
 .projects-grid{
-    
+    display: grid;
+    grid-template: repeat(auto-fit, 100px) / 50% 50%;
+    gap: 10px;
+}
+
+.project{
+    /* background-color: red; */
+    /* border: 2px solid red; */
 }
 
 .announcements{
