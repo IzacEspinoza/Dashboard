@@ -7,41 +7,38 @@
 
 .sidebar div{
     padding: 15px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .sidebar div *{
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
 }
 
 .header div{
     padding: 15px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .header div *{
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
 }
 
 .main div{
     padding: 15px;
-    border: 2px solid gold;
+    /* border: 2px solid gold; */
 }
 
 .main div *, .main h1{
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
 }
 
 /*****************************************/
 
 /*Container style *************************/
 .container{
-    padding: 5px;
-    border: 5px solid red;
     background-color: #cbd5e1;
-
     display: grid;
-    grid-template: auto auto / 20% 80%;
+    grid-template: auto / 20% 80%;
 }
 /******************************************/
 
@@ -49,6 +46,7 @@
 .sidebar{
     color: white;
     background-color: #0284c7;
+    /* position: fixed; */
 
     grid-column: 1;
     grid-row: 1 / 4;
@@ -84,20 +82,28 @@
 /* Header styling *****************************************/
 .header{
     display: grid;
-    grid-template: 100px 100px / 50% 50%;
-
-    height: auto;
-    padding: 5px;
-    /* height: 20%; */
-
+    grid-template-rows: 80px 80px;
     background-color: #f0f9ff;
-    border: 2px solid green;
+}
+
+.header-1{
+    display: flex;
+    justify-content: space-between;
+    /* height: 50%; */
+}
+
+.header-2{
+    display: flex;
+    justify-content: space-between;
+    /* height: 50%; */
 }
 
 .header > div{
     /* background-color: red; */
-    height: 40%;
-    padding: 5px;
+    /* border: 2px dotted black; */
+    /* height: auto; */
+    /* padding: 5px; */
+
 }
 
 .search,
@@ -109,11 +115,8 @@
 }
 
 .search{
-    grid-row: 1;
-    grid-column: 1 / 2;
-
-    height: 50px;
-    /* justify-content: flex-start; */
+    width: 50%;
+    /* background-color: red; */
 }
 
 .search input{
@@ -123,20 +126,19 @@
 
     background-color: #cbd5e1;
     border-radius: 10px;
+    border: none;
 }
 
-.search img{
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-}
+/* .search img{
+    
+} */
 
 .hero{
-    grid-row: 2;
-    grid-column: 1;
+    /* grid-row: 2;
+    grid-column: 1; */
 
-    height: 50px;
-    justify-content: flex-start;
+    /* height: 50px;
+    justify-content: flex-start; */
 }
 
 .hero img{
@@ -147,27 +149,33 @@
 
 .hero-info{
     font-weight: bold;
+    flex-wrap: wrap;
 }
 
-.options, .actions{
-    justify-content: flex-end;
-    height: 50px;
-}
+
 
 .options ul, .actions ul{
+    display: flex;
     flex-direction: row;
     list-style-type: none;
 }
 
-/* .options{
-} */
+.options, .actions{
+    /* display: flex; */
+}
 
 .actions button{
     background-color: #0284c7;
+    width: 5rem;
     padding: 5px;
     border-radius: 20px;
-    margin: 10px;
+    border: none;
+    margin: 5px;
     color: white;
+}
+
+.actions button:hover{
+    border: 2px solid #cbd5e1
 }
 
 /**************************************/
@@ -220,34 +228,45 @@
 .news{
     display: flex;
     flex-direction: column;
-    background-color: red;
+    /* background-color: red; */
     flex: 3;
 }
 
 .news .title{
-    background-color: grey;
+    /* background-color: grey; */
 }
 
 .announcements{
-    background-color: blue;
+    background-color: white;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 1px 2px 10px #0284c7;
+    border-radius: 20px;
 }
 
 .announcements .item{
-    background-color: white;
-    flex: 3;
+    /* background-color: white; */
+    /* flex: 3; */
     /* height: auto; */
     width: auto;
+    border: 2px dotted black;
 }
 
 .trending{
-    background-color: blue;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    box-shadow: 1px 2px 10px #0284c7;
+    border-radius: 20px;
 }
 
 .trend{
-    background-color: white;
-    /* display: flex; */
+    /* background-color: white; */
+    display: flex;
+    border: 2px dotted black;
+    /* flex-direction: row; */
     flex: 3;
 }
 
