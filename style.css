@@ -46,7 +46,6 @@
 .sidebar{
     color: white;
     background-color: #0284c7;
-    /* position: fixed; */
 
     grid-column: 1;
     grid-row: 1 / 4;
@@ -54,26 +53,41 @@
 
 .logo{
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.menu{
+    border: 2px dotted black;
+    /* display: flex; */
 }
 
 .menu ul{
     display: flex;
     flex-direction: column;
+    /* border: 2px dotted red; */
+    padding: 5px;
+    flex: 3;
 }
 
 .menu li{
     display: flex;
+    border: 2px dotted black;
+    justify-content: space-evenly;
+    padding: 5px;
 }
 
-.options ul{
+.sidebar .options{
+    border: 2px solid red;
+}
+
+.sidebar .options ul{
     display: flex;
     flex-direction: column;
-    height: 20px;
+    /* height: 20px; */
 }
 
-.options li{
-    display: flex;
+.sidebar .options li{
+    /* display: flex; */
 }
 
 /***************************************
@@ -158,7 +172,7 @@
 .options a{
     text-decoration: none;
     color: black;
-    
+
 }
 
 .options a:hover{
